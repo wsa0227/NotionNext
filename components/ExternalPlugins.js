@@ -1,16 +1,15 @@
 import { siteConfig } from '@/lib/config'
-import dynamic from 'next/dynamic'
-import { GlobalStyle } from './GlobalStyle'
-import LA51 from './LA51'
-import TianLiGPT from './TianliGPT'
-import WebWhiz from './Webwhiz'
-
 import { convertInnerUrl } from '@/lib/notion/convertInnerUrl'
 import { isBrowser, loadExternalResource } from '@/lib/utils'
+import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Coze from './Coze'
+import { GlobalStyle } from './GlobalStyle'
 import { initGoogleAdsense } from './GoogleAdsense'
+import LA51 from './LA51'
+import TianLiGPT from './TianliGPT'
+import WebWhiz from './Webwhiz'
 
 /**
  * 各种插件脚本
@@ -57,7 +56,7 @@ const ExternalPlugin = props => {
   const ANALYTICS_51LA_CK = siteConfig('ANALYTICS_51LA_CK')
   const DIFY_CHATBOT_ENABLED = siteConfig('DIFY_CHATBOT_ENABLED')
   const TIANLI_KEY = siteConfig('TianliGPT_KEY')
-  const GLOBAL_JS = siteConfig('GLOBAL_JS')
+  const GLOBAL_JS = siteConfig('GLOBAL_JS', '')
   const CLARITY_ID = siteConfig('CLARITY_ID')
   const IMG_SHADOW = siteConfig('IMG_SHADOW')
   const ANIMATE_CSS_URL = siteConfig('ANIMATE_CSS_URL')
@@ -105,11 +104,13 @@ const ExternalPlugin = props => {
     if (ADSENSE_GOOGLE_ID) {
       setTimeout(() => {
         initGoogleAdsense(ADSENSE_GOOGLE_ID)
-      }, 1000)
+      }, 3000)
     }
 
-    // 映射url
-    convertInnerUrl(props?.allNavPages)
+    setTimeout(() => {
+      // 映射url
+      convertInnerUrl(props?.allNavPages)
+    }, 500)
   }, [router])
 
   useEffect(() => {
