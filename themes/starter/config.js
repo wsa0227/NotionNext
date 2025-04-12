@@ -208,9 +208,12 @@ const CONFIG = {
   STARTER_TEAM_ITEMS: [
     {
       STARTER_TEAM_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa06c61bb-980e-4180-bc18-c15f92c78bb4%2Ftangly1024.jpg?table=collection&id=8e7acf17-de09-4fa1-abde-b5b80ad4a813&t=8e7acf17-de09-4fa1-abde-b5b80ad4a813&width=100&cache=v2',
-      STARTER_TEAM_ITEM_NICKNAME: 'Tangly',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Developer'
+        process.env.NEXT_PUBLIC_THEME_STARTER_TEAM_ITEM_AVATAR ||
+        '/avatar.png',
+      STARTER_TEAM_ITEM_NICKNAME: 'SuperWang',
+      STARTER_TEAM_ITEM_DESCRIPTION: '真自知，才能真自由。',
+      STARTER_TEAM_ITEM_DESCRIPTION_2: '我所知便是我无知。',
+      STARTER_TEAM_ITEM_DESCRIPTION_3: '三人行必有我师焉。',
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-01.png',
@@ -244,7 +247,8 @@ const CONFIG = {
   STARTER_CONTACT_LOCATION_TITLE: '我们的位置',
   STARTER_CONTACT_LOCATION_TEXT: '中国，福建',
   STARTER_CONTACT_EMAIL_TITLE: '我们如何帮助您？',
-  STARTER_CONTACT_EMAIL_TEXT: 'mail@tangly1024.com',
+  STARTER_CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'wsa0227@gmail.com',
+  STARTER_CONTACT_EMAIL_TEXT: 'wsa0227@gmail.com',
 
   // 嵌入外部表单
   STARTER_CONTACT_MSG_EXTERNAL_URL: 'https://noteforms.com/forms/yfctc7', // 基于NoteForm创建，将留言数据存在Notion中
