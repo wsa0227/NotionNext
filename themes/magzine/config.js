@@ -110,6 +110,17 @@ const CONFIG = {
   MAGZINE_MENU_ARCHIVE: true, // 显示归档
   MAGZINE_MENU_SEARCH: true, // 显示搜索
 
-  MAGZINE_WIDGET_TO_TOP: true // 跳回顶部
+  MAGZINE_WIDGET_TO_TOP: true, // 跳回顶部
+
+  MAGZINE_SIDEBAR_SECTIONS: [
+    {
+      title: 'SuperWang的学习笔记',
+      href: 'https://toolyuan.com'
+    },
+    {
+      title: '个人主页',
+      href: 'https://toolyuan.com'
+    }
+  ]
 }
 export default CONFIG
