@@ -176,7 +176,7 @@ const CONFIG = {
   ],
 
   //   FAQ 常见问题模块
-  STARTER_FAQ_ENABLE: true, // 常见问题模块开关
+  STARTER_FAQ_ENABLE: false, // 常见问题模块开关
   STARTER_FAQ_TITLE: '常见问题解答',
   STARTER_FAQ_TEXT_1: '有任何问题吗？请看这里',
   STARTER_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -210,7 +210,7 @@ const CONFIG = {
       STARTER_TEAM_ITEM_AVATAR:
         process.env.NEXT_PUBLIC_THEME_STARTER_TEAM_ITEM_AVATAR ||
         '/avatar.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'SuperWang',
+      STARTER_TEAM_ITEM_NICKNAME: 'SuperWang 的学习笔记',
       STARTER_TEAM_ITEM_DESCRIPTION: '真自知，才能真自由。',
       STARTER_TEAM_ITEM_DESCRIPTION_2: '我所知便是我无知。',
       STARTER_TEAM_ITEM_DESCRIPTION_3: '三人行必有我师焉。',

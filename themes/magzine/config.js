@@ -57,19 +57,19 @@ const CONFIG = {
         { title: 'Github', href: 'https://github.com/tangly1024/NotionNext' },
         {
           title: '开发帮助',
-          href: 'https://docs.tangly1024.com/article/how-to-develop-with-notion-next'
+          href: 'http://toolyuan.top'
         },
         {
           title: '功能反馈',
-          href: 'https://github.com/tangly1024/NotionNext/issues/new/choose'
+          href: 'http://toolyuan.top'
         },
         {
           title: '技术讨论',
-          href: 'https://github.com/tangly1024/NotionNext/discussions'
+          href: 'http://toolyuan.top'
         },
         {
           title: '关于作者',
-          href: 'https://blog.tangly1024.com/about'
+          href: 'http://toolyuan.top'
         }
       ]
     },
